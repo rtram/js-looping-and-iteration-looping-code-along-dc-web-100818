@@ -11,7 +11,7 @@ function maybeTrue() {
 
 function tailsNeverFails() {
   let i = 0
-  while (maybeTrue) {
+  while (maybeTrue()) {
     i++
   }
   return `You got ${i} tails in a row!`
